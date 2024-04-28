@@ -8,7 +8,7 @@ import DeleteButton from './../../components/DeleteButton';
 import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 
-export default function categories() {
+export default function Categories() {
 
     const [categoryName, setCategoryName] = useState("")
     const [categories, setCategories] = useState([])

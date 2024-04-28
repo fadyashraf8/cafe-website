@@ -56,7 +56,7 @@ export default function MenuItemPriceProps({ name, addLabel, props, setProps }) 
 
             <div className={isOpen ? "block" : "hidden"}>
                 {props?.map((e, index) => {
-                    return <div className="flex gap-2 items-center">
+                    return <div key={index} className="flex gap-2 items-center">
 
                         <div>
                             <label className="text-lg">
