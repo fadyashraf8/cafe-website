@@ -84,7 +84,7 @@ export default function Profile() {
     return (
         <section className="my-5">
 
-            <UserTabs isAdmin={data.admin} />
+            <UserTabs isAdmin={isAdmin} />
 
             <div className="my-3 mx-auto max-w-lg">
                

@@ -38,7 +38,7 @@ export default function Users() {
         <>
 
             <div className="max-w-xl mx-auto mt-8">
-                <UserTabs isAdmin={data.admin} />
+                <UserTabs isAdmin={true} />
                 <div>
                     {users?.map((e) => {
 

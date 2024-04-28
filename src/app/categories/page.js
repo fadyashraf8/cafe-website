@@ -112,7 +112,7 @@ export default function Categories() {
 
         <>
             <section className="mt-8 max-w-xl mx-auto">
-                <UserTabs isAdmin={data.admin} />
+                <UserTabs isAdmin={true} />
 
                 <form className="mt-8" onSubmit={handleSubmitCategory}>
                     <div className="flex gap-2 items-end justify-center">

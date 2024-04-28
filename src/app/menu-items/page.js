@@ -44,7 +44,7 @@ export default function MenuItems() {
 
         <>
             <section className='mx-auto mt-8 max-w-xl '>
-                <UserTabs isAdmin={data.admin} />
+                <UserTabs isAdmin={true} />
 
 
                 <div className='mt-8 '>

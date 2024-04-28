@@ -60,7 +60,7 @@ if (!data.admin) {
 
         <>
         <section className="mt-8">
-<UserTabs isAdmin={data.admin}/>
+<UserTabs isAdmin={true}/>
 <UserFormInfo user={user} onSave={handleSaveClick}/>
         </section>
         

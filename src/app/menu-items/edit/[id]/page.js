@@ -92,7 +92,7 @@ export default function EditMenuItem() {
     return (
         <>
             <section className="mt-8 max-w-xl mx-auto">
-                <UserTabs isAdmin={data.admin} />
+                <UserTabs isAdmin={true} />
 
                 <div className="mt-8 max-w-md mx-auto ">
                     <Link className='button text-xl' href={'/menu-items'}>
