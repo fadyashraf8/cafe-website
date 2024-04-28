@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { User } from './../../../models/Users';
-import { isAdmin } from "../auth/[...nextauth]/route.js";
+import { isAdmin } from "../../authOptions.js";
 
 export async function GET() {
     mongoose.connect(process.env.MONGO_URL);

@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 import { MenuItem } from "../../../models/MenuItems.js"
-import { isAdmin } from "../auth/[...nextauth]/route.js"
 
+import isAdmin from "../../authOptions.js"
 
 
 

@@ -19,6 +19,7 @@ export default function Categories() {
 
     useEffect(() => {
         fetchCategories()
+     
     }, [])
 
     if (loading) {

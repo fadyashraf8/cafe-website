@@ -1,6 +1,6 @@
 import { Category } from "../../../models/Category.js"
 import mongoose from "mongoose"
-import { isAdmin } from "../auth/[...nextauth]/route.js"
+import isAdmin from "../../authOptions.js"
 
 
 

@@ -6,13 +6,13 @@ import Loading from './../feed/loading';
 import useProfile from "../../components/Menu/UseProfile.js";
 
 
+
 export default function MenuPage() {
     const [categories, setCategories] = useState([])
     const [menuItems, setMenuItems] = useState([])
     const { loading, data } = useProfile()
 
 
- 
 
     useEffect(() => {
         fetch('/api/categories').then(res => {
