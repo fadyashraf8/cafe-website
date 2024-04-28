@@ -4,7 +4,6 @@ import CredentialsProvider from "next-auth/providers/credentials"
 import GoogleProvider from "next-auth/providers/google";
 import bcrypt from 'bcrypt'
 import { MongoDBAdapter } from "@auth/mongodb-adapter"
-
 import { User } from '../../../../models/Users.js';
 import clientPromise from './../../../../libs/mongoConnect';
 import { UserInfo } from "../../../../models/UserInfo.js";
@@ -12,7 +11,7 @@ import { UserInfo } from "../../../../models/UserInfo.js";
 
 
 
-export const authOptions = {
+export const authOptions  = {
   secret: process.env.SECRET,
   adapter: MongoDBAdapter(clientPromise),
   session: {

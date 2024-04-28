@@ -33,7 +33,7 @@ export default function PageOrder() {
             fetch('/api/orders?_id=' + id).then(res => {
                 res.json().then(orderData => {
                     setOrder(orderData);
-           console.log(orderData)
+                    console.log(orderData)
                 });
             })
         }
@@ -42,9 +42,9 @@ export default function PageOrder() {
 
     let subtotal = 0;
     if (order?.cartProducts) {
-      for (const product of order?.cartProducts) {
-        subtotal += cartProductPrice(product);
-      }
+        for (const product of order?.cartProducts) {
+            subtotal += cartProductPrice(product);
+        }
     }
 
     if (loading) {
@@ -67,42 +67,42 @@ export default function PageOrder() {
 
 
                 {order && (
-                   
+
                     <div className="grid md:grid-cols-2 md:gap-16">
                         <div>
-                       
+
                             {order?.cartProducts?.map(product => (
                                 <ProductCart key={product._id} product={product} />
                             ))}
-                             <div className="text-right py-2 text-gray-500">
-              Subtotal:
-              <span className="text-black font-bold inline-block w-8">${subtotal}</span>
-              <br />
-              Delivery:
-              <span className="text-black font-bold inline-block w-8">$5</span>
-              <br />
-              Total:
-              <span className="text-black font-bold inline-block w-8">
-                ${subtotal + 5}
-              </span>
-            </div>
+                            <div className="text-right py-2 text-gray-500">
+                                Subtotal:
+                                <span className="text-black font-bold inline-block w-8">${subtotal}</span>
+                                <br />
+                                Delivery:
+                                <span className="text-black font-bold inline-block w-8">$5</span>
+                                <br />
+                                Total:
+                                <span className="text-black font-bold inline-block w-8">
+                                    ${subtotal + 5}
+                                </span>
+                            </div>
                         </div>
                         <div >
                             <div className="bg-gray-100 p-4 rounded-lg">
-{order.deliveryOption=="delivery"?
-                                <AddressInputs disabled={true} addressProps={order} />
-:
-<>
-<label>Table Number</label>
-<input
-disabled={true}
-type="text"
-value={order.tableNumber}
-/>
-</>
-}
+                                {order.deliveryOption == "delivery" ?
+                                    <AddressInputs disabled={true} addressProps={order} />
+                                    :
+                                    <>
+                                        <label>Table Number</label>
+                                        <input
+                                            disabled={true}
+                                            type="text"
+                                            value={order.tableNumber}
+                                        />
+                                    </>
+                                }
 
-                               
+
                             </div>
                         </div>
                     </div>
