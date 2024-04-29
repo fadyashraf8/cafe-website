@@ -20,7 +20,11 @@ export default function Orders() {
 
     useEffect(() => {
         fetchOrders();
-    }, []);
+      
+           const intervalId = setInterval(fetchOrders, 4000);
+    
+           return () => clearInterval(intervalId);
+      }, []);
 
 
     function fetchOrders() {
