@@ -84,9 +84,9 @@ export default function Cart() {
                 });
             });
             await toast.promise(promise, {
-                loading: 'Preparing your order...',
-                success: 'Redirecting to payment...',
-                error: 'Something went wrong... Please try again later',
+                loading: 'جاري تجهيز الطلب',
+                success: 'عملية ناجحة!',
+                error: 'حاول مرة اخري',
             })
     
         }
@@ -113,9 +113,9 @@ export default function Cart() {
                 })
             });
             await toast.promise(promise, {
-                loading: 'Preparing your order...',
-                success: 'Redirecting to payment...',
-                error: 'Something went wrong... Please try again later',
+                loading: 'جاري تجهيز الطلب',
+                success: 'عملية ناجحة!',
+                error: 'حاول مرة اخري',
             })
         }
 

@@ -29,9 +29,9 @@ export default function NewMenuItemPage() {
                 reject()
         })
         await toast.promise(savingPromise, {
-            loading: 'Saving this tasty item',
-            success: 'Saved',
-            error: 'Error',
+            loading: 'جاري حفظ العنصر',
+            success: 'تم حفظ العنصر',
+            error: 'حاول مرة اخري',
         })
         setRedirectTo(true)
     }

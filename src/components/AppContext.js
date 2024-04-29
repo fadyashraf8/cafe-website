@@ -49,7 +49,7 @@ function removeCartProducts(indexToRemove){
     saveCartProductsToLocalStorage(newCartProducts)
     return newCartProducts
   })
-  toast.success("Item Deleted!")
+  toast.success("تم المسح")
 }
 
   function saveCartProductsToLocalStorage(cartProducts) {

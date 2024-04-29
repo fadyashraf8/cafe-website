@@ -3,13 +3,15 @@
 import { signIn, useSession } from "next-auth/react"
 import Link from "next/link.js"
 import { useState } from "react"
+import Image from "next/image";
+
 
 
 
 
 export default function Login() {
 
-    const {session}=useSession()
+    const { session } = useSession()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [loginProg, setLoginProg] = useState(false)
@@ -18,7 +20,7 @@ export default function Login() {
         e.preventDefault();
         setLoginProg(true)
         await signIn('credentials', { email, password, callbackUrl: '/' })
-     
+
         setLoginProg(false)
     }
 
@@ -43,7 +45,7 @@ export default function Login() {
                     <button type="submit" disabled={loginProg}>
                         تسجيل دخول
                     </button>
-                   
+
                 </form>
 
 

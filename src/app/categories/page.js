@@ -65,9 +65,9 @@ export default function Categories() {
             }
 
             await toast.promise(creationPromise, {
-                loading: editedCategory ? "Updating Your New Category" : "Creating Your New Category",
-                success: editedCategory ? "Updated Category!" : "Category Created!",
-                error: "ERROR"
+                loading: editedCategory ? "جاري تعديل اسم القسم" : "جاري انشاء القسم",
+                success: editedCategory ? "تم تعديل اسم القسم" : "تم انشاء القسم",
+                error: "حاول مرة اخري"
             })
         })
 
@@ -94,9 +94,9 @@ export default function Categories() {
 
 
             await toast.promise(DeletePromise, {
-                loading: "Deleting Your  Category",
-                success: "Category Deleted!",
-                error: "ERROR"
+                loading: "جاري مسح القسم",
+                success: "تم مسح القسم",
+                error: "حاوي مرة اخري"
             })
 
             fetchCategories()

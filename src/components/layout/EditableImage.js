@@ -24,9 +24,9 @@ export default function EditableImage({ link, setLink }) {
             })
 
             await toast.promise(uploadPromise, {
-                loading: "Uploading...",
-                success: "Upload Complete!",
-                error: "ERROR"
+                loading: "جاري تحميل الصورة",
+                success: "تم تحميل الصورة",
+                error: "حاول مرة اخري"
             })
         }
     }

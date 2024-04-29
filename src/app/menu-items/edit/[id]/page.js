@@ -48,9 +48,9 @@ export default function EditMenuItem() {
                 reject()
         })
         await toast.promise(savingPromise, {
-            loading: "Saving...",
-            success: "Saved!",
-            error: "ERROR"
+            loading: "جاري الحفظ",
+            success: "تم الحفظ",
+            error: "حاول مرة اخري"
         })
         setRedirectTo(true)
     }
@@ -67,9 +67,9 @@ export default function EditMenuItem() {
                 reject()
         })
         await toast.promise(deletePromise, {
-            loading: "Deleting...",
-            success: "Deleted!",
-            error: "ERROR"
+            loading: "جاري المسح",
+            success: "تم المسح",
+            error: "حاول مرة اخري"
         })
         setRedirectTo(true)
 

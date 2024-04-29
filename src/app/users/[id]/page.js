@@ -43,9 +43,9 @@ const savingPromise = new Promise(async (resolve, reject) => {
         reject()
 })
 await toast.promise(savingPromise, {
-    loading: "Saving...",
-    success: "Profile Saved!",
-    error: "ERROR"
+    loading: "جاري الحفظ",
+    success: "تم الحفظ",
+    error: "حاول مرة اخري"
 })
 }
 if (loading) {

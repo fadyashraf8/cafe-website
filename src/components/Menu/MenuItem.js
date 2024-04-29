@@ -24,9 +24,9 @@ const session=useSession()
             }
             addToCart(menuItem, selectedSize, selectedIngs)
             setShowPopUp(false)
-            toast.success("Added To Cart!")
+            toast.success("تم الاضافة الي طلبك")
         }else{
-            toast.error("You Are Not Logged In!")
+            toast.error("يجب ان تسجل الدخول اولا")
 
         }
     }
